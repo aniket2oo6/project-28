@@ -12,7 +12,7 @@ var world,boy;
 
 
 function preload(){
-	boy=loadImage("images/boy.png");
+	boy=loadImage("boy.png");
   }
 
 function setup() {
@@ -28,7 +28,7 @@ function setup() {
 	mango5=new mango(1050,130,30);
 	mango6=new mango(900,200,30);
 	mango7=new mango(1000,70,30);
-	stone1=new Stone(245,470,10);
+	stone1=new Stone(245,470,30);
 	rope1=new Rope(stone1.body,{x:245,y:470});
 
 	treeObj=new tree(1050,580);

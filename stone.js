@@ -6,7 +6,7 @@ var options ={
     friction: 1,
     density: 1.2
 }
-//this.image = loadImage("images/stone.png");
+this.image = loadImage("stone.png");
 this.body = Bodies.circle(x,y,radius,options);
 this.radius = radius;
 World.add(world,this.body);
@@ -15,10 +15,10 @@ World.add(world,this.body);
 var a = this.body.position;
 //var b = this.body.angle;
 push();
-//translate(a.x,a.y);
+translate(a.x,a.y);
 //rotate(b);
-ellipseMode(CENTER);
-ellipse(a.x,a.y,this.radius);
+imageMode(CENTER);
+image(this.image,0,0,this.radius,this.radius);
 pop();
     }
 }
